@@ -105,4 +105,7 @@ theme: tranquilpeak
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:QDFish/sakamoto.blog.git
+  branch: main
+  message: new post
