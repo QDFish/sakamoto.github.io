@@ -15,7 +15,8 @@ ps：本文所有的JS代码运行在nodel.js环境中
 
 ## this指针会指向哪些对象
 
-![Untitled](Untitled.png)
+{% image fancybox left clear group:IT ./2024/02/18/rn/js-this/Untitled.png "js-this" %}
+<!-- ![Untitled](Untitled.png) -->
 
 上图是本文的整体流程，所有的绿色标签就是this指针可能会指向的对象集合，这些对象包括
 
@@ -327,7 +328,7 @@ class BasePage extends Component {
 
 **模块中的组件事件调用模块自身的方法**
 
-![Untitled](Untitled1.png)
+{% image fancybox left clear group:IT ./2024/02/18/rn/js-this/Untitled1.png "js-this" %}
 
 这实际就是一个跨模块通信的场景
 
@@ -364,7 +365,7 @@ export class ModuleA extends Component {
 
 点击按钮，app抛出异常
 
-![Untitled](Untitled2.png)
+{% image fancybox left clear group:IT ./2024/02/18/rn/js-this/Untitled2.png "js-this" %}
 
 异常错误为refresh undefine，原因就是this指针丢失，指向undefine，原因就在于fetch是标准函数模式。从上文可以知道，标准函数是一种偏动态的函数方式，函数中的this指针是在调用的那一刻才决定的，并且谁调用就指向谁。标准函数作为指针直接传给其他模块后只能作为普通函数被调用，失去调用者后，this的指针指向undefine
 
@@ -382,7 +383,7 @@ fetch = () => {
 
 点击按钮，正常调用
 
-![Untitled](Untitled3.png)
+{% image fancybox left clear group:IT ./2024/02/18/rn/js-this/Untitled3.png "js-this" %}
 
 箭头函数是一种定义时就已经决定this指向的函数方式，它偏静态，以此来理解下调用过程
 
