@@ -58,7 +58,24 @@ Openwrt默认的存储空间只有100M多，而进行透明代理需要安装许
         opkg install fdisk
         opkg install cfdisk
         ```
-        
+    - 旁路由初始化
+        - network→firewall→Enable SYN-flood protection 关闭
+        - network→interface→lan→edit
+            - 设置网关为主路由
+                
+                {% image fancybox left clear group:IT v2ray1_4.png %}
+                
+            - 设置DNS server为主路由地址
+                
+                {% image fancybox left clear group:IT v2ray1_5.png %}
+                
+            - 勾选忽略接口，即关闭dhcp
+                
+                {% image fancybox left clear group:IT v2ray1_6.png %}
+                
+            - 关闭所有ipv6服务
+                
+                {% image fancybox left clear group:IT v2ray1_7.png %}
 - 扩容
     - 查看disk信息
         
