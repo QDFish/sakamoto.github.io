@@ -34,7 +34,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: [google31c107cb7b4016a0.html]
+skip_render: [google31c107cb7b4016a0.html, sitemap.xml]
 
 # Writing
 new_post_name: :title.md # File name of new posts
