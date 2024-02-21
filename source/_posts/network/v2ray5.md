@@ -43,7 +43,7 @@ server=/baidu.com/192.168.0.50#20053
     
     [https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/install.sh](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/install.sh)
     
-    更改`SERVERS=(114.114.114.114 114.114.115.115 223.5.5.5 119.29.29.29)` 这一行为v2ray设置的dns_cn inbound. `SERVERS=（192.168.0.50#20053）`
+    更改`SERVERS=(114.114.114.114 114.114.115.115 223.5.5.5 119.29.29.29)` 为 `SERVERS=（192.168.0.50#20053）` 这一行对应v2ray设置的dns_cn inbound.
     
     首次运行的时候由于dnsmasq.d目录下并没有文件，所以会报错，把remove相关的代码注释即可，下次运行需要再打开（你也可以改善下，我懒得改
     
