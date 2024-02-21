@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "cd themes/tranquilpeak/ && npm install && npm run prod && cd .. && cd .. && hexo generate",
+    "build": "cd themes/tranquilpeak/ && npm install && npm run prod && cd .. && cd .. && node hack.js && hexo generate",
+    "debug": "node hack.js && hexo generate && hexo server",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
