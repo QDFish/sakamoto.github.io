@@ -8,9 +8,6 @@ tags:
 ---
 
 
-
-# React Native 版本选择
-
 > 本文调研所有0.70以上的React Native版本
 > 
 
