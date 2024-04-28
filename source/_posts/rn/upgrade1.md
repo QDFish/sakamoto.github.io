@@ -93,16 +93,16 @@ tags:
 
 **主要更新点**
 
-- **调试改进**
+- {% hl_text green %}调试改进{% endhl_text %}
     1. 解决了hermes系统中，在app初始化时console.log 不打印的问题
     2. 新增了一个官方的debug工具（实验性）
 - 发布符号链接的稳定版本
-1. 新增Kotlin 模板
-2. {% hl_text green %}Android 14 支持{% endhl_text %}
-3. 新框架新增无桥模式
-4. Remote JavaScript Debugging  移除
-5. {% hl_text green %}iOS版本最小支持13.4{% endhl_text %}
-6. {% hl_text green %}Node版本最小支持18{% endhl_text %}
+- 新增Kotlin 模板
+- {% hl_text green %}Android 14 支持{% endhl_text %}
+- 新框架新增无桥模式
+- Remote JavaScript Debugging  移除
+- {% hl_text green %}iOS版本最小支持13.4{% endhl_text %}
+- {% hl_text green %}Node版本最小支持18{% endhl_text %}
 
 **总结：**
 
@@ -128,7 +128,7 @@ tags:
 
 **总结：**
 
-0.74版本主要点在于引入了Yoga3.0，会对项目旧有布局产生影响，影响点在于有使用row-reverse布局的组件，使用该性质的组件不多，修改工作量可控，但由于0.74
+0.74版本主要点在于引入了Yoga3.0，会对项目旧有布局产生影响，影响点在于有使用row-reverse布局的组件，使用该性质的组件不多，修改工作量可控。
 
 <br/>
 
