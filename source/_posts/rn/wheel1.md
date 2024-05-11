@@ -8,6 +8,8 @@ tags:
 - 滚轮选择器
 ---
 
+<!-- toc -->
+
 > iOS的滚轮选择器兼顾了实用性跟美观，在例如日期选择，国家省份选择的用户场景下，尤为适合，在{% post_link rn/create_library %}中我们介绍了如何使用**create-react-native-library**创建一个标准RN库，以这个例子为契机，包括创建，环境初始化，设计，到发布代码到npm，依次实践整个流程。
 > 
 
@@ -15,9 +17,13 @@ tags:
 
 PS: 目前安卓已经有优秀的第三方框架实现了滚轮选择器，原生代码的实现效果必然要好于JS层，所以该项目以学习为主要目的，在此基础上再不断完善用户体验。
 
-{% image fancybox left clear group:IT wheel0.gif 60% 60% "iOS" %} 
-{% image fancybox right clear group:IT wheel1.gif 60% 60% "TSX" %}
+<span style="width:40%;display:inline-block">
+    {% image fancybox left clear group:IT wheel0.gif "iOS" %}
+</span><span style="width:40%;display:inline-block">
+    {% image fancybox left clear group:IT wheel1.gif "TSX" %}
+</span>
 
+  <!-- {% image fancybox left clear group:IT wheel1.gif 60% 60% "TSX" %} -->
     
 ## 前言
 
