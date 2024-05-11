@@ -19,7 +19,7 @@ PS: 目前安卓已经有优秀的第三方框架实现了滚轮选择器，原�
 
 <span style="width:40%;display:inline-block">
     {% image fancybox left clear group:IT wheel0.gif "iOS" %}
-</span><span style="width:40%;display:inline-block">
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="width:40%;display:inline-block;">
     {% image fancybox left clear group:IT wheel1.gif "TSX" %}
 </span>
 
