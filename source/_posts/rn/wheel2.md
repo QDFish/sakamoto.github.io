@@ -1,7 +1,7 @@
 ---
 title: React-Native 纯ts代码实现滚轮选择器 —— 滚轮动画逻辑（二）
 date: 2024-05-16 13:54:11
-thumbnailImage: wheel3.png
+thumbnailImage: wheel4.png
 categories:
 - React Native
 tags:
