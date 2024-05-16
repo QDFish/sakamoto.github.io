@@ -7,6 +7,8 @@ tags:
 - 动画
 ---
 
+<!-- toc -->
+
 RN提供了两套动画系统
 
 - Animated API
