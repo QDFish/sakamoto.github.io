@@ -4,6 +4,7 @@
         var tableOfContents = null;
         var thumbnailImageUrl = post.thumbnailImageUrl;
         var postContent = post.content;
+        var excerpt = post.excerpt
         // Define default position for the thumbnail image
         var thumbnailImagePosition = theme.thumbnail_image_position;
         /* Define thumbnail image */
@@ -16,7 +17,7 @@
                 thumbnailImagePosition = post.thumbnailImagePosition;
             }
         }
-
+        
         // Generate and insert table of contents in post content
         if (!post.excerpt && (/<!--(\s*)[t|T][o|O][c|C](\s*)-->/).test(postContent)) {
             if (__('post.toc_title')) {
@@ -26,7 +27,9 @@
             }
             tableOfContents += toc(postContent, {list_number: false})
             postContent = postContent.replace(/<!--(\s*)[t|T][o|O][c|C](\s*)-->/, tableOfContents)
-        }
+        } 
+        
+        post.excerpt = post.excerpt.replace(/<!--(\s*)[t|T][o|O][c|C](\s*)-->(.*\n)+<!--(\s*)[t|T][o|O][c|C]stop(\s*)-->/, "")
     %>
     <article class="postShorten postShorten--thumbnailimg-<%= thumbnailImagePosition %>">
         <div class="postShorten-wrap">

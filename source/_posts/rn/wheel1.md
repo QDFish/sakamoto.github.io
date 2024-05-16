@@ -2,6 +2,7 @@
 title: React-Native 纯ts代码实现滚轮选择器-----选择器逻辑(一)
 date: 2024-05-11 09:21:47
 thumbnailImage: wheel1.gif
+description: xxxx
 categories:
 - React Native
 tags:
@@ -24,7 +25,7 @@ PS: 目前安卓已经有优秀的第三方框架实现了滚轮选择器，原�
 </span>
 
   <!-- {% image fancybox left clear group:IT wheel1.gif 60% 60% "TSX" %} -->
-    
+
 ## 前言
 
 本系列将由三大篇构成：

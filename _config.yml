@@ -109,6 +109,10 @@ theme: tranquilpeak
 plugins:
 - hexo-renderer-mathjax
 
+toc:
+  maxDepth: 3
+  class: toc
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
