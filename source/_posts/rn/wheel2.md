@@ -31,7 +31,7 @@ tags:
 
 指数函数是形式为$b^x$的数学函数，其中b为基底，x为指数
 
-下图为$y=2^x$的坐标图
+下图为{% mathjax %}y=2^x{% endmathjax %}的坐标图
 
 {% image fancybox left clear group:IT wheel1.png "指数函数" %}
 
@@ -42,7 +42,7 @@ tags:
 
 指数函数可以进行的多种变换，有时候我们需要y的范围为0~1，并且增长率逐渐降低，这时候的函数式为
 
-$y = -(1/2)^x + 1$
+{% mathjax %}y = -(1/2)^x + 1{% endmathjax %}
 
 {% image fancybox left clear group:IT wheel2.png "指数函数变化" %}
 
@@ -66,13 +66,13 @@ $y = -(1/2)^x + 1$
 
 从图中看出偏移量为LB‘2的长度，假设绿色线段长度为G，则HB’2为G/2，则B’2M的长度为
 
-$G/2 * sin(pi/2 - H)$
+{% mathjax %}G/2 * sin(pi/2 - H){% endmathjax %}
 
 其中H为30°角，转成rad为 30/180 * pi
 
 于是可以得出LB‘2的长度为：
 
-$G/2(1 - sin(pi/2 - H))$
+{% mathjax %}G/2(1 - sin(pi/2 - H)){% endmathjax %}
 
 {% image fancybox left clear group:IT wheel5.png "滚轮侧边图" %}
 
