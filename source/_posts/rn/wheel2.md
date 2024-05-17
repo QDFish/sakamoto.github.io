@@ -30,7 +30,7 @@ tags:
 
 ## 指数函数
 
-指数函数是形式为$b^x$的数学函数，其中b为基底，x为指数
+指数函数是形式为{% mathjax %}b^x{% endmathjax %}的数学函数，其中b为基底，x为指数
 
 下图为{% mathjax %}y=2^x{% endmathjax %}的坐标图
 
