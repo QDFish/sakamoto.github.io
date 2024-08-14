@@ -15,19 +15,19 @@ tags:
 
 ```tsx
 const person = {
-	name: 'tony',
-	age: 31,
-	father: {
-		name: 'jack',
-		age: 55
-	},
-	assets: [
-		'house',
-		{
-			name: 'money',
-			num: 100000
-		}
-	]
+    name: 'tony',
+    age: 31,
+    father: {
+    	name: 'jack',
+    	age: 55
+    },
+    assets: [
+        'house',
+        {
+            name: 'money',
+            num: 100000
+        }
+    ]
 };
 ```
 
@@ -43,13 +43,13 @@ person对象有多种形式的变量
 
 ```tsx
 const getProperties = (obj: any, path: string) => {
-	const keys = path.split('.') as Array<keyof any>;
-	return keys.reduce((acc, key) => {
-		if (acc && typeof acc === 'object') {
-			return acc[key];
-		}
-		return undefined;
-	}, obj as any);
+    const keys = path.split('.') as Array<keyof any>;
+    return keys.reduce((acc, key) => {
+    	if (acc && typeof acc === 'object') {
+    		return acc[key];
+    	}
+    	return undefined;
+    }, obj as any);
 };
 ```
 
@@ -87,19 +87,19 @@ type Person = typeof person
 
 ```tsx
 const person = {
-	name: 'tony',
-	age: 31,
-	father: {
-		name: 'jack',
-		age: 55
-	},
-	assets: [
-		'house',
-		{
-			name: 'money',
-			num: 100000
-		}
-	]
+    name: 'tony',
+    age: 31,
+    father: {
+    	name: 'jack',
+    	age: 55
+    },
+    assets: [
+    	'house',
+    	{
+            name: 'money',
+            num: 100000
+    	}
+    ]
 }  as const;
 
 type Person = typeof person
@@ -146,12 +146,12 @@ type KeyPath<P> = keyof P
 ```tsx
 //将三元符号? : 格式化可以得到一个类似于If else的形式，? 代表if，: 代表else
 type KeyPath<P> = {
-	[K in keyof P]: 
-	//P: object | array
-	K extends string ?
-		K
-	:
-		never
+    [K in keyof P]: 
+    //P: object | array
+    K extends string ?
+    	K
+    :
+    	never
 }[keyof P]
 ```
 
@@ -188,19 +188,19 @@ const path: KeyPath<Person> = '' //类型解析错误
 
 ```tsx
 const person = {
-	name: 'tony',
-	age: 31,
-	father: {
-		name: 'jack',
-		age: 55
-	},
-	// assets: [
-	// 	'house',
-	// 	{
-	// 		name: 'money',
-	// 		num: 100000
-	// 	}
-	// ]
+    name: 'tony',
+    age: 31,
+    father: {
+        name: 'jack',
+        age: 55
+    },
+    // assets: [
+    // 	'house',
+    // 	{
+    // 		name: 'money',
+    // 		num: 100000
+    // 	}
+    // ]
 }  as const;
 
 ```
@@ -213,11 +213,11 @@ const person = {
 
 ```tsx
 const assets = [
-	'house',
-	{
-		name: 'money',
-		num: 100000
-	}
+    'house',
+    {
+        name: 'money',
+        num: 100000
+    }
 ] as const;
 
 type Assets = typeof assets
